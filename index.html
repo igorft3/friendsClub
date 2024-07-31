@@ -10,6 +10,7 @@
   <body>
     <header>
       <div class="header__container container">
+        <button class="burger"></button>
         <div class="header__logo-body">
           <a href="#" class="header__logo"></a>
         </div>
@@ -48,12 +49,14 @@
     <main>
       <section id="news" class="news">
         <div class="news__container container">
-          <div class="news__wrapp">
+          <div class="news__wrapp wrapp__title">
             <h2 class="news__title title">Новости</h2>
-            <a href="#" class="news__link wrapp-link">Читать все</a>
+            <a href="#" class="news__link wrapp-link"
+              >Читать все<span>Все</span></a
+            >
           </div>
-          <ul class="news__list-cards">
-            <li class="news__card-item">
+          <ul class="news__list-cards card-list">
+            <li class="news__card-item card-item">
               <span class="news__span-teg span-teg">Недвижимость</span>
               <h3 class="news__subtitle subtitle">
                 Какая она&nbsp;&mdash; аренда помещения под магазин
@@ -65,7 +68,7 @@
                 ><span class="bookmark">5</span>
               </div>
             </li>
-            <li class="news__card-item">
+            <li class="news__card-item card-item">
               <span class="news__span-teg span-teg">Кафе и&nbsp;рестораны</span>
               <h3 class="news__subtitle subtitle">
                 Как добиться порядка в&nbsp;офисе
@@ -75,7 +78,7 @@
                 <span class="view">3</span><span class="like">14</span>
               </div>
             </li>
-            <li class="news__card-item">
+            <li class="news__card-item card-item">
               <span class="news__span-teg span-teg">Успех</span>
               <h3 class="news__subtitle subtitle">
                 Научиться учету времени&nbsp;всего&nbsp;за неделю&nbsp;&mdash;
@@ -91,7 +94,7 @@
       </section>
       <section id="residents" class="residents">
         <div class="residents__container container">
-          <div class="residents__wrapp">
+          <div class="residents__wrapp wrapp__title">
             <h2 class="residents__title title">Новые резиденты</h2>
             <a href="#" class="residents__link wrapp-link">Смотреть всех</a>
           </div>
@@ -151,12 +154,14 @@
       </section>
       <section id="article" class="article">
         <div class="article__container container">
-          <div class="article__wrapp">
+          <div class="article__wrapp wrapp__title">
             <h2 class="article__title title">Свежие статьи</h2>
-            <a href="#" class="article__link wrapp-link">Читать все</a>
+            <a href="#" class="article__link wrapp-link"
+              >Читать все<span>Все</span></a
+            >
           </div>
-          <ul class="article__list">
-            <li class="article__card-item">
+          <ul class="article__list card-list">
+            <li class="article__card-item card-item">
               <span class="article__span-teg span-teg">Недвижимость</span>
               <div class="article__body">
                 <h3 class="article__subtitle subtitle">
@@ -171,7 +176,7 @@
                 </div>
               </div>
             </li>
-            <li class="article__card-item">
+            <li class="article__card-item card-item">
               <span class="article__span-teg span-teg"
                 >Кафе и&nbsp;рестораны</span
               >
@@ -187,7 +192,7 @@
                 </div>
               </div>
             </li>
-            <li class="article__card-item">
+            <li class="article__card-item card-item">
               <span class="article__span-teg span-teg">Успех</span>
               <div class="article__body">
                 <h3 class="article__subtitle subtitle">
@@ -207,13 +212,14 @@
       </section>
       <section id="event" class="event">
         <div class="event__container container">
-          <div class="event__wrapp">
-            <h2 class="event__title title">Мероприятия на&nbsp;этой недел</h2>
+          <div class="event__wrapp wrapp__title">
+            <h2 class="event__title title">Мероприятия на&nbsp;этой неделе</h2>
             <a href="#" class="event__link wrapp-link">Смотреть все</a>
           </div>
           <div class="event__body">
             <div class="event__main-card">
               <div class="left">
+                <!-- <div class="wrapp-mobile"> -->
                 <div class="event__info">
                   <p class="event__date">9&nbsp;апреля в&nbsp;19:00</p>
                   <p class="event__name">Леонид Макеев</p>
@@ -222,6 +228,7 @@
                   KODE Waves: технологии, которые волнуют всех
                 </h3>
                 <button class="event__btn">Присоединиться</button>
+                <!-- </div> -->
               </div>
               <ul class="event__list right">
                 <li class="event__item"></li>
@@ -230,14 +237,22 @@
                 <li class="event__item">+154</li>
               </ul>
             </div>
-            <ul class="event__wrapp">
+            <ul class="event__wrapp-list">
               <li class="event__card">
                 <div class="event__card-body">
                   <div class="event__info">
                     <p class="event__date">9&nbsp;апреля в&nbsp;19:00</p>
                     <p class="event__name">Леонид Макеев</p>
                   </div>
-                  <button class="event__btn">Присоединиться</button>
+                  <div class="event__wrapp">
+                    <button class="event__btn">Присоединиться</button>
+                    <ul class="event__list right">
+                      <li class="event__item"></li>
+                      <li class="event__item"></li>
+                      <li class="event__item"></li>
+                      <li class="event__item">+154</li>
+                    </ul>
+                  </div>
                 </div>
                 <h3 class="event__heading">
                   Основы архитектуры и&nbsp;интеграции информационных систем
@@ -249,7 +264,15 @@
                     <p class="event__date">9&nbsp;апреля в&nbsp;19:00</p>
                     <p class="event__name">Леонид Макеев</p>
                   </div>
-                  <button class="event__btn">Присоединиться</button>
+                  <div class="event__wrapp">
+                    <button class="event__btn">Присоединиться</button>
+                    <ul class="event__list right">
+                      <li class="event__item"></li>
+                      <li class="event__item"></li>
+                      <li class="event__item"></li>
+                      <li class="event__item">+154</li>
+                    </ul>
+                  </div>
                 </div>
                 <h3 class="event__heading">
                   Анализ &amp;&nbsp;Управление в&nbsp;ИТ-проектах 2024
@@ -257,17 +280,75 @@
               </li>
             </ul>
           </div>
+          <ul class="event__list-molile">
+            <li class="event__item-mobile">
+              <div class="event__body-mobile">
+                <div class="event__info">
+                  <p class="event__date">9&nbsp;апреля в&nbsp;19:00</p>
+                  <p class="event__name">Леонид Макеев</p>
+                </div>
+                <div class="event__wrapp-mobile">
+                  <button class="event__btn">Присоединиться</button>
+                  <ul class="event__list">
+                    <li class="event__item">+154</li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="event__subtitle">
+                KODE Waves: технологии, которые волнуют всех
+              </h3>
+            </li>
+            <li class="event__item-mobile">
+              <div class="event__body-mobile">
+                <div class="event__info">
+                  <p class="event__date">9&nbsp;апреля в&nbsp;19:00</p>
+                  <p class="event__name">Леонид Макеев</p>
+                </div>
+                <div class="event__wrapp-mobile">
+                  <button class="event__btn">Присоединиться</button>
+                  <ul class="event__list">
+                    <li class="event__item">+154</li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="event__subtitle">
+                Основы архитектуры и&nbsp;интеграции информационных систем
+              </h3>
+            </li>
+            <li class="event__item-mobile">
+              <div class="event__body-mobile">
+                <div class="event__info">
+                  <p class="event__date">9&nbsp;апреля в&nbsp;19:00</p>
+                  <p class="event__name">Леонид Макеев</p>
+                </div>
+                <div class="event__wrapp-mobile">
+                  <button class="event__btn">Присоединиться</button>
+                  <ul class="event__list">
+                    <li class="event__item">+154</li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="event__subtitle">
+                Анализ &amp;&nbsp;Управление в&nbsp;ИТ-проектах 2024
+              </h3>
+            </li>
+          </ul>
         </div>
       </section>
       <section id="video" class="video">
         <div class="video__container container">
-          <div class="video__wrapp">
+          <div class="video__wrapp wrapp__title">
             <h2 class="video__title title">Новые видео</h2>
-            <a href="#" class="video__link link wrapp-link">Смотреть все</a>
+            <a href="#" class="video__link link wrapp-link"
+              >Смотреть все<span>Все</span></a
+            >
           </div>
-          <ul class="video__list">
-            <li class="video__card-item">
+          <ul class="video__list card-list">
+            <li class="video__card-item card-item">
               <span class="video__span-teg span-teg">Недвижимость</span>
+              <!-- <video class="video__video" src="#"></video> -->
+              <!-- заглушка в виде картинки -->
+              <div class="video__video"></div>
               <div class="video__body">
                 <h3 class="video__subtitle subtitle">
                   Какая она&nbsp;&mdash; аренда помещения под магазин
@@ -281,10 +362,13 @@
                 </div>
               </div>
             </li>
-            <li class="video__card-item">
+            <li class="video__card-item card-item">
               <span class="video__span-teg span-teg"
                 >Кафе и&nbsp;рестораны</span
               >
+              <!-- <video class="video__video" src="#"></video> -->
+              <!-- заглушка в виде картинки -->
+              <div class="video__video"></div>
               <div class="video__body">
                 <h3 class="video__subtitle subtitle">
                   Как добиться порядка в&nbsp;офисе
@@ -297,8 +381,11 @@
                 </div>
               </div>
             </li>
-            <li class="video__card-item">
+            <li class="video__card-item card-item">
               <span class="video__span-teg span-teg">Успех</span>
+              <!-- <video class="video__video" src="#"></video> -->
+              <!-- заглушка в виде картинки -->
+              <div class="video__video"></div>
               <div class="video__body">
                 <h3 class="video__subtitle subtitle">
                   Научиться учету времени всего за&nbsp;неделю&nbsp;&mdash;
@@ -319,11 +406,11 @@
     <footer>
       <div class="footer__container container">
         <div class="left">
-          <a href="" class="footer__link">Правила клуба</a>
-          <a href="" class="footer__link">Договор оферты</a>
+          <a href="!#" class="footer__link">Правила клуба</a>
+          <a href="#!" class="footer__link">Договор оферты</a>
         </div>
-        <div class="rigth">
-          <a href="" class="footer__link">Правила продажи товаров</a>
+        <div class="right">
+          <a href="#" class="footer__link">Правила продажи товаров</a>
           <ul class="footer__list">
             <li class="footer__item"></li>
             <li class="footer__item"></li>
@@ -333,5 +420,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
